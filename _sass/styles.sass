@@ -1,24 +1,17 @@
 @charset "utf-8"
 
-// Define defaults for each variable.
-
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !default
-$base-font-size:   16px !default
-$base-font-weight: 400 !default
-$small-font-size:  $base-font-size * 0.875 !default
-$base-line-height: 1.5 !default
-
-$spacing-unit:     30px !default
-
-$text-color:       #111 !default
-$background-color: #fdfdfd !default
-$brand-color:      #2a7ae2 !default
-
-@mixin relative-font-size($ratio)
-  font-size: $base-font-size * $ratio
-
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure
+  margin: 0
+  padding: 0
 
 // Import partials.
-@import "styles/base"
-@import "styles/layout"
-@import "styles/syntax-highlighting"
+@import "styles/sass_helper/variables"
+@import "styles/sass/helper/syntax-highlighting"
+@import "styles/sass_helper/fonts"
+@import "styles/sass_helper/mixins"
+@import "styles/sass_helper/utilities"
