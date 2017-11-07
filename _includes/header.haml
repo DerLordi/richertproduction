@@ -1,1 +1,15 @@
 %header.site-header{ role: "banner"}
+
+.container
+  %nav.navbar.navbar-expand-lg.navbar-light.bg-light.rounded
+    %a.navbar-brand{:href => "#"} RICHERT production
+    %button.navbar-toggler{"aria-controls" => "navbarsExample09", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarsExample09", "data-toggle" => "collapse", :type => "button"}
+      %span.navbar-toggler-icon
+    #navbarsExample09.collapse.navbar-collapse
+      %ul.navbar-nav.mr-auto
+        %li.nav-item.active
+          %a.nav-link{:href => "#"}
+            Home
+            %span.sr-only (current)
+        %li.nav-item
+          %a.nav-link{:href => "#"} Link
