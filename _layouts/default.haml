@@ -2,9 +2,8 @@
 %html{ lang: "de" }
   {% include head.html %}
   %body
-    {% haml header.haml %}
     %main.page-content{ 'aria-label': "Content" }
-      .wrapper
-        {{ content }}
+      {{ content }}
 
     {% haml footer.haml %}
+    {% include javascripts.html %}

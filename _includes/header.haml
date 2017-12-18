@@ -1,15 +1,23 @@
 %header.site-header{ role: "banner"}
 
-.container
-  %nav.navbar.navbar-expand-lg.navbar-light.bg-light.rounded
-    %a.navbar-brand{:href => "#"} RICHERT production
-    %button.navbar-toggler{"aria-controls" => "navbarsExample09", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarsExample09", "data-toggle" => "collapse", :type => "button"}
+.container-fluid
+  %nav.navbar.navbar-expand-lg.navbar-light
+    %a.navbar-brand{:href => "#"}
+      %img.logo{:src => "assets/images/logo.png", :alt => "Logo von Richertproduction.de", :width => "350px"}/
+    %button.navbar-toggler{"aria-controls" => "navigationsbar", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navigationsbar", "data-toggle" => "collapse", :type => "button"}
       %span.navbar-toggler-icon
-    #navbarsExample09.collapse.navbar-collapse
-      %ul.navbar-nav.mr-auto
-        %li.nav-item.active
+    #navigationsbar.collapse.navbar-collapse.justify-content-end
+      %ul.navbar-nav
+        %li.text-uppercase.nav-item.active
           %a.nav-link{:href => "#"}
-            Home
+            %strong Projekte
             %span.sr-only (current)
-        %li.nav-item
-          %a.nav-link{:href => "#"} Link
+        %li.text-uppercase.nav-item
+          %a.nav-link{:href => "#"}
+            %strong Über Uns
+        %li.text-uppercase.nav-item
+          %a.nav-link{:href => "#"}
+            %strong Blog
+        %li.text-uppercase.nav-item
+          %a.nav-link{:href => "#"}
+            %strong Kontakt

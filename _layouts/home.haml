@@ -2,7 +2,80 @@
 layout: default
 ---
 
-.home
-  %h1.page-heading Überschrift Startseite
-  {{ content }}
+// HOME SPLASH AREA
+%section#splasharea
+  {% haml header.haml %}
+  .container
+    .row.text-center
+      .col
+        %h1.text-uppercase Webseite - Logo - Visitenkarten
+        .divider
+        %h2 Eine Präsenz im Internet ist im heutigem Markt unerlässlich. Ob mit Webseite oder eigenen Visitenkarten, ich helfe Ihnen in der Online-Welt Fuss zu fassen.
+    .row.text-center
+      .col
+        %a.btn.btn-green{href: "#", role: "button"} Erfahre mehr
+
+// HOME INTRODUCTION
+%section#introduction
+  .container
+    .row
+      .col
+        %h3 Über mich ein wenig
+    .row
+      .col-8
+        %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus quod soluta, tenetur nisi, deleniti omnis corporis quia animi perferendis dolore ipsa! Consectetur sapiente harum pariatur aliquam, quod voluptatum, distinctio eos!
+      .col-4
+        %p hier komme ein Bild von mir rein
+
+// HOME SERVICES
+%section#services
+  .container
+    .row
+      .col
+        %h3 Services - Was ich alles biete
+    .row
+      .col-8
+        %p Hier kommen alle Leistungen von mir hin
+        %ul
+          %li Webseiten bauen / umbauen
+          %li Webseiten betreuen
+          %li Domains bestellen / Umziehen
+          %li Logos erstellen
+          %li Visitenkarten erstellen
+          %li Schulungen / Nachhilfe
+          %li etc
+      .col-4
+        %p Mal gucken welches Layout ich hier nehme
+
+// HOME PORTFOLIO
+%section#portfolio
+  .container
+    .row
+      .col
+        %h3 Portfolio - Hier zeige ich was ich schon gemacht habe
+    .row
+      .col-8
+        %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus quod soluta, tenetur nisi, deleniti omnis corporis quia animi perferendis dolore ipsa! Consectetur sapiente harum pariatur aliquam, quod voluptatum, distinctio eos!
+      .col-4
+        %p Mal gucken welches Layout ich hier nehme
+
+// HOME BLOGEINTRAEGE
+%section#blog-entries
+  .container
+    .row
+      .col
+        %h3 Blogeinträge - Hier kommen letzte Blogeinträge hinzu oder so
+    .row
+      .col
+        %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus quod soluta, tenetur nisi, deleniti omnis corporis quia animi
+
+// HOME KONTAKT
+%section#contact
+  .container
+    .row
+      .col
+        %h3 Kontakt - Hier kommt das Kontaktformular hin
+    .row
+      .col
+        %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus quod soluta, tenetur nisi, deleniti omnis corporis quiquod voluptatum, distinctio eos!
 
