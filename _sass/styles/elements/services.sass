@@ -1,16 +1,36 @@
 #services
   background-color: $light-gray
   padding-top: 60px
+  margin-bottom: 60px
 
   .service-box
     background-color: white
     margin-bottom: 30px
-    padding: 40px
     overflow: hidden
+    transition: all 200ms
+
+    &.bg-green
+      padding: 40px
+
+    &:hover
+      background-color: $ci-green
+      color: white
+      .icon svg
+        fill: white
+      .text .description
+        color: white
+
+    .link
+      padding: 40px
+      color: inherit
+      display: block
+      overflow: hidden
 
     .icon
       float: left
-      width: 35%
+      width: 82px
+      svg
+        fill: $ci-green
 
     .text
       float: right

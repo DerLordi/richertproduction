@@ -1,5 +1,20 @@
 @charset "utf-8"
 
+// sass_helper partials.
+@import "styles/sass_helper/variables"
+@import "styles/sass_helper/syntax-highlighting"
+@import "styles/sass_helper/fonts"
+@import "styles/sass_helper/mixins"
+@import "styles/sass_helper/utilities"
+
+//site specific styles
+@import "styles/elements/navbar"
+@import "styles/elements/splasharea"
+@import "styles/elements/services"
+@import "styles/elements/introduction"
+@import "styles/elements/whyme"
+@import "styles/elements/contact"
+
 /**
  * Reset some basic elements
  */
@@ -9,8 +24,8 @@ dl, dd, ol, ul, figure
   margin: 0
   padding: 0
 
-section
-  margin-bottom: 120px
+body
+  font-family: 'PT Sans', sans-serif
 
 @media (min-width: 576px)
   .container
@@ -31,15 +46,3 @@ section
 
 
 
-// sass_helper partials.
-@import "styles/sass_helper/variables"
-@import "styles/sass_helper/syntax-highlighting"
-@import "styles/sass_helper/fonts"
-@import "styles/sass_helper/mixins"
-@import "styles/sass_helper/utilities"
-
-//site specific styles
-@import "styles/elements/navbar"
-@import "styles/elements/splasharea"
-@import "styles/elements/services"
-@import "styles/elements/introduction"

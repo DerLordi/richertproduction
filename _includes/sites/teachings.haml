@@ -1,0 +1,18 @@
+// HOME SPLASH AREA
+%header#splasharea
+  .background-logo-placeholder
+    %img{:src => "assets/images/background-logo.png", :alt => "Richert Production Logo für den Kopfbereich"}/
+  {% haml navigation.haml %}
+  .container
+    .row.splashscreen-text-wrapper
+      .col-lg-8.col-md-12
+        %p.h1.text-uppercase.text-right
+          #splashscreen-text.text-center
+        .divider
+        %h2.text-center
+          WEBDESIGN SEITE
+          %strong unverbindliches Angebot erstellen.
+    .row
+      .col-lg-8.col-md-12
+        .text-center
+          %a.btn.btn-green.cta-btn{:href => "#"} Angebot erstellen lassen
