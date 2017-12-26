@@ -12,6 +12,25 @@ dl, dd, ol, ul, figure
 section
   margin-bottom: 120px
 
+@media (min-width: 576px)
+  .container
+    max-width: 720px
+
+@media (min-width: 768px)
+  .container
+    max-width: 960px
+
+@media (min-width: 992px)
+  .container
+    max-width: 960px
+
+@media (min-width: 1200px)
+  .container
+    max-width: 1200px
+
+
+
+
 // sass_helper partials.
 @import "styles/sass_helper/variables"
 @import "styles/sass_helper/syntax-highlighting"
@@ -22,3 +41,5 @@ section
 //site specific styles
 @import "styles/elements/navbar"
 @import "styles/elements/splasharea"
+@import "styles/elements/services"
+@import "styles/elements/introduction"

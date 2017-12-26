@@ -1,6 +1,12 @@
 nav.navbar
   padding: 10px
+  .navbar-nav
+    li.nav-item
+      a.nav-link
+        color: #ccc
+      &.active a.nav-link
+        color: white
   img.logo
     transition: transform 200ms
     &:hover
-      transform: scale3d(1.05, 1.05, 1.05)
+      transform: scale(1.05)
