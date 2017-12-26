@@ -3,49 +3,122 @@ layout: default
 ---
 
 // HOME SPLASH AREA
-%section#splasharea
-  {% haml header.haml %}
+%header#splasharea
+  .background-logo-placeholder
+    %img{:src => "assets/images/background-logo.png", :alt => "Richert Production Logo für den Kopfbereich"}/
+  {% haml navigation.haml %}
   .container
-    .row.text-center
-      .col
-        %h1.text-uppercase Webseite - Logo - Visitenkarten
+    .row.splashscreen-text-wrapper
+      .col-lg-8.col-md-12
+        %p.h1.text-uppercase.text-right
+          #splashscreen-text.text-center
         .divider
-        %h2 Eine Präsenz im Internet ist im heutigem Markt unerlässlich. Ob mit Webseite oder eigenen Visitenkarten, ich helfe Ihnen in der Online-Welt Fuss zu fassen.
-    .row.text-center
-      .col
-        %a.btn.btn-green{href: "#", role: "button"} Erfahre mehr
+        %h2.text-center
+          Wiedererkennungswert und Präsenz im Marktumfeld ist für ein Unternehmen, einem Verein oder einer Einzelperson
+          wichtig, wenn man versucht Reichweite zu gewinnen. Ich helfe Ihnen diese zu Erreichen. Lassen Sie sich von mir
+          ein
+          %strong unverbindliches Angebot erstellen.
+    .row
+      .col-lg-8.col-md-12
+        .text-center
+          %a.btn.btn-green.cta-btn{:href => "#"} Angebot erstellen lassen
 
-// HOME INTRODUCTION
-%section#introduction
-  .container
-    .row
-      .col
-        %h3 Über mich ein wenig
-    .row
-      .col-8
-        %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus quod soluta, tenetur nisi, deleniti omnis corporis quia animi perferendis dolore ipsa! Consectetur sapiente harum pariatur aliquam, quod voluptatum, distinctio eos!
-      .col-4
-        %p hier komme ein Bild von mir rein
 
 // HOME SERVICES
 %section#services
   .container
     .row
-      .col
-        %h3 Services - Was ich alles biete
+      .col.text-center.mb-3
+        %h2.text-uppercase.text-bold My Services
+        .divider
     .row
-      .col-8
-        %p Hier kommen alle Leistungen von mir hin
-        %ul
-          %li Webseiten bauen / umbauen
-          %li Webseiten betreuen
-          %li Domains bestellen / Umziehen
-          %li Logos erstellen
-          %li Visitenkarten erstellen
-          %li Schulungen / Nachhilfe
-          %li etc
+      .col-sm-12
+        .service-box.bg-green.color-white.text-bold
+          .col-xs-12.text-uppercase.text-center
+            ICH BIETE STETS DEN BESTEN SERVICE FÜR MEINE KUNDEN - UND DAS ZU EINEM FAIREM PREIS
+      .col-md-6.col-sm-12
+        .service-box
+          .icon
+            %img{:src => "assets/images/icons/icon-webdesign.png", :alt => "Icon Webdesign"}/
+          .text
+            .header.text-uppercase
+              Webdesign
+            .description
+              Konzeption und Entwicklung  des Designs Ihrer Webseite
+      .col-md-6.col-sm-12
+        .service-box
+          .icon
+            %img{:src => "assets/images/icons/icon-logos.png", :alt => "Icon Logos"}/
+          .text
+            .header.text-uppercase
+              Logos
+            .description
+              Entwicklung des Identitäts- symbol Ihrer Firma/Verein
+      .col-md-6.col-sm-12
+        .service-box
+          .icon
+            %img{:src => "assets/images/icons/icon-visitenkarte.png", :alt => "Icon Visitenkarten"}/
+          .text
+            .header.text-uppercase
+              Visitenkarten
+            .description
+              Erstellung von Karten nach Ihrem Coperate Design
+      .col-md-6.col-sm-12
+        .service-box
+          .icon
+            %img{:src => "assets/images/icons/icon-webentwicklung.png", :alt => "Icon Webentwicklung"}/
+          .text
+            .header.text-uppercase
+              Webentwicklung
+            .description
+              Entwicklung komplexer Applikationen für das Web
+      .col-md-6.col-sm-12
+        .service-box
+          .icon
+            %img{:src => "assets/images/icons/icon-schulungen.png", :alt => "Icon Schulungen"}/
+          .text
+            .header.text-uppercase
+              Schulungen
+            .description
+              Ich teile mein Wissen und gebe es an Schüler weiter
+      .col-md-6.col-sm-12
+        .service-box
+          .icon
+            %img{:src => "assets/images/icons/icon-schulungen.png", :alt => "Icon Schulungen"}/
+          .text
+            .header.text-uppercase
+              Beratungen
+            .description
+              Domainumzug, Hosting... Ich beantworte Ihre Fragen
+
+// HOME INTRODUCTION
+%section#introduction
+  .container
+    .row
       .col-4
-        %p Mal gucken welches Layout ich hier nehme
+        %p Hier komme das Bild rein
+      .col-8
+        %h2.mb-5 Hi, mein Name ist Daniel Richert,
+        %p
+          ich bin professioneller Webentwickler und Webdesigner. Ausserdem finde ich Logos und das generelle Auftreten
+          eines Unternehmens oder Vereins On- sowie Offline sehr interessant. Ich denke das ich für Sie genau der
+          richtige bin, wenn Sie sich in diesem Bereich weiterentwickeln wollen. Kontaktieren Sie mich einfach.
+          %a{:href => "#"} Mehr über mich
+
+// HOME WHYME
+%section#whyme
+  .container
+    .row
+      .col.text-center.mb-3
+        %h2.text-uppercase.text-bold WHY ME?
+        .divider
+    .row
+      .col-12.text-center
+        %p
+          Ich entwickle Webseiten schon seid Jahren mit Leidenschaft. Ich arbeite sehr eng mit meinen Kunden zusammen
+          um ein zufriedenstellendes Ergebnis zu liefern. Und das alles zu faieren Preisen. Es findet sich immer eine
+          Lösung, auch für Kunden mit begrenztem Budget.
+
 
 // HOME PORTFOLIO
 %section#portfolio

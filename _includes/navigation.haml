@@ -1,23 +1,21 @@
-%header.site-header{ role: "banner"}
-
 .container-fluid
-  %nav.navbar.navbar-expand-lg.navbar-light
+  %nav.navbar.navbar-expand-lg
     %a.navbar-brand{:href => "#"}
       %img.logo{:src => "assets/images/logo.png", :alt => "Logo von Richertproduction.de", :width => "350px"}/
     %button.navbar-toggler{"aria-controls" => "navigationsbar", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navigationsbar", "data-toggle" => "collapse", :type => "button"}
       %span.navbar-toggler-icon
     #navigationsbar.collapse.navbar-collapse.justify-content-end
       %ul.navbar-nav
-        %li.text-uppercase.nav-item.active
+        %li.nav-item.active
           %a.nav-link{:href => "#"}
             %strong Projekte
             %span.sr-only (current)
-        %li.text-uppercase.nav-item
+        %li.nav-item
           %a.nav-link{:href => "#"}
             %strong Über Uns
-        %li.text-uppercase.nav-item
+        %li.nav-item
           %a.nav-link{:href => "#"}
             %strong Blog
-        %li.text-uppercase.nav-item
+        %li.nav-item
           %a.nav-link{:href => "#"}
             %strong Kontakt
