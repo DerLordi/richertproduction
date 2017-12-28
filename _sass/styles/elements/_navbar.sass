@@ -1,5 +1,6 @@
 nav.navbar
-  padding: 10px
+  padding: 20px 40px
+  transition: all 300ms
   .navbar-nav
     li.nav-item
       a.nav-link
@@ -10,3 +11,14 @@ nav.navbar
     transition: transform 200ms
     &:hover
       transform: scale(1.05)
+
+nav.navbar.reduced
+  padding: 5px 40px
+  background-color: white
+  box-shadow: 0 0 8px -2px #333
+
+  li.nav-item
+    a.nav-link
+      color: #333
+    &.active a.nav-link
+      color: $ci-green

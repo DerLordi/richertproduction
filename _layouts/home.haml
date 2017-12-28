@@ -23,80 +23,6 @@ layout: default
         .text-center
           %a.btn.btn-green.cta-btn{:href => "#"} Angebot erstellen lassen
 
-
-// HOME SERVICES
-%section#services
-  .container
-    .row
-      .col.text-center.mb-3
-        %h2.text-uppercase.text-bold My Services
-        .divider
-    .row
-      .col-sm-12
-        .service-box.bg-green.color-white.text-bold
-          .col-xs-12.text-uppercase.text-center
-            ICH BIETE STETS DEN BESTEN SERVICE FÜR MEINE KUNDEN - UND DAS ZU EINEM FAIREM PREIS
-      .col-md-6.col-sm-12
-        .service-box
-          %a.link{:href => "webdesign.html"}
-            .icon
-              {% include icons/webdesign_icon.html %}
-            .text
-              .header.text-uppercase
-                Webdesign
-              .description
-                Konzeption und Entwicklung  des Designs Ihrer Webseite
-      .col-md-6.col-sm-12
-        .service-box
-          %a.link{:href => "webentwicklung.html"}
-            .icon
-              {% include icons/webentwicklung_icon.html %}
-            .text
-              .header.text-uppercase
-                Webentwicklung
-              .description
-                Entwicklung komplexer  Applikationen für das Web
-      .col-md-6.col-sm-12
-        .service-box
-          %a.link{:href => "logos.html"}
-            .icon
-              {% include icons/logo_icon.html %}
-            .text
-              .header.text-uppercase
-                Logos
-              .description
-                Entwicklung des Identitäts- Symbol Ihrer Firma/Verein
-      .col-md-6.col-sm-12
-        .service-box
-          %a.link{:href => "visitenkarten.html"}
-            .icon
-              {% include icons/visitenkarte_icon.html %}
-            .text
-              .header.text-uppercase
-                Visitenkarten
-              .description
-                Erstellung von Karten nach  Ihrem Coperate Design
-      .col-md-6.col-sm-12
-        .service-box
-          %a.link{:href => "schulungen.html"}
-            .icon
-              {% include icons/schulung_icon.html %}
-            .text
-              .header.text-uppercase
-                Schulungen
-              .description
-                Ich teile mein Wissen und  gebe es an Schüler weiter
-      .col-md-6.col-sm-12
-        .service-box
-          %a.link{:href => "beratung.html"}
-            .icon
-              {% include icons/beratung_icon.html %}
-            .text
-              .header.text-uppercase
-                Beratungen
-              .description
-                Domainumzug, Hosting... Ich beantworte Ihre Fragen
-
 // HOME INTRODUCTION
 %section#introduction
   .container
@@ -113,7 +39,83 @@ layout: default
           ich bin professioneller Webentwickler und Webdesigner. Ausserdem finde ich Logos und das generelle Auftreten
           eines Unternehmens oder Vereins On- sowie Offline sehr interessant. Ich denke das ich für Sie genau der
           richtige bin, wenn Sie sich in diesem Bereich weiterentwickeln wollen. Kontaktieren Sie mich einfach.
-          %a.d-block{:href => "#"} Mehr über mich
+          %br/
+          %a.btn.btn-ghost-white.mt-2{:href => "#"} Mehr über mich
+
+// HOME SERVICES
+%section#services
+  .container
+    .row
+      .col.text-center.mb-3
+        %h2.text-uppercase.text-bold My Services
+        .divider
+    .row
+      .col-sm-12
+        .service-box.bg-green.color-white.text-bold
+          .col-xs-12.text-uppercase.text-center
+            ALLE DIENSTLEISTUNGEN LASSEN SICH KOMBINIEREN -
+            %u "ICH BRAUCHE EINE WEBSEITE"
+            ALS ANFRAGE REICHT AUCH VÖLLIG AUS
+      .col-md-6.col-sm-12
+        .service-box
+          %a.link{:href => "webdesign"}
+            .icon
+              {% include icons/webdesign_icon.html %}
+            .text
+              .header.text-uppercase
+                Webdesign
+              .description
+                Konzeption und Entwicklung  des Designs Ihrer Webseite
+      .col-md-6.col-sm-12
+        .service-box
+          %a.link{:href => "webentwicklung"}
+            .icon
+              {% include icons/webentwicklung_icon.html %}
+            .text
+              .header.text-uppercase
+                Webentwicklung
+              .description
+                Entwicklung komplexer  Applikationen für das Web
+      .col-md-6.col-sm-12
+        .service-box
+          %a.link{:href => "logos"}
+            .icon
+              {% include icons/logo_icon.html %}
+            .text
+              .header.text-uppercase
+                Logos
+              .description
+                Entwicklung des Identitäts- Symbol Ihrer Firma/Verein
+      .col-md-6.col-sm-12
+        .service-box
+          %a.link{:href => "visitenkarten"}
+            .icon
+              {% include icons/visitenkarte_icon.html %}
+            .text
+              .header.text-uppercase
+                Visitenkarten
+              .description
+                Erstellung von Karten nach  Ihrem Coperate Design
+      .col-md-6.col-sm-12
+        .service-box
+          %a.link{:href => "schulungen"}
+            .icon
+              {% include icons/schulung_icon.html %}
+            .text
+              .header.text-uppercase
+                Schulungen
+              .description
+                Ich teile mein Wissen und  gebe es an Schüler weiter
+      .col-md-6.col-sm-12
+        .service-box
+          %a.link{:href => "beratung"}
+            .icon
+              {% include icons/beratung_icon.html %}
+            .text
+              .header.text-uppercase
+                Beratungen
+              .description
+                Domainumzug, Hosting... Ich beantworte Ihre Fragen
 
 // HOME WHYME
 %section#whyme.mb-5
@@ -123,11 +125,29 @@ layout: default
         %h2.text-uppercase.text-bold WHY ME?
         .divider
     .row
-      .col-12.text-center.mb-5
+      .col-sm-8.col-xs-12.text-center.mb-5.description
         %p
           Ich entwickle Webseiten schon seid Jahren mit Leidenschaft. Ich arbeite sehr eng mit meinen Kunden zusammen
           um ein zufriedenstellendes Ergebnis zu liefern. Und das alles zu faieren Preisen. Es findet sich immer eine
           Lösung, auch für Kunden mit begrenztem Budget.
+
+// HOME MAKEANOFFER
+%section#makeanoffer
+  .container
+    .row
+      .col.text-center.mb-3
+        %h2.text-uppercase.text-bold LET ME MAKE YOU AN OFFER
+        .divider
+    .row
+      .col-sm-8.col-xs-12.text-center.mb-5.description
+        %p
+          Bitte wählen Sie eine Kategorie aus und beschreiben Sie kurz, was ich für Sie tun kann. Ich werde
+          schnellstmöglich antworten und wenn möglich, einen Kostenvoranschlag machen. Gerne können Sie mich auch
+          zwischen 17:00 Uhr und 22:00 Uhr anrufen.
+    .row
+      .col-sm-8.col-xs-12.text-center.mb-5.description
+        %p.h2.text-bold Tel.: 01522 1802762
+
 
 // HOME PORTFOLIO
 // %section#portfolio.mb-5
