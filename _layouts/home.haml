@@ -27,9 +27,9 @@ layout: default
 %section#introduction
   .container
     .row
-      .col-md-4.col-sm-12
+      .col-md-4.col-sm-12.slide-in-left
         %img{:src => "assets/images/daniel-profil-image.png", :alt => "Bild von Daniel Richert | Gründer Richert Production", :width => "400"}/
-      .col-md-8.col-sm-12.description
+      .col-md-8.col-sm-12.description.slide-in-right
         .position-absolute.start-quote
           "
         .position-absolute.end-quote
@@ -56,7 +56,7 @@ layout: default
             ALLE DIENSTLEISTUNGEN LASSEN SICH KOMBINIEREN -
             %u "ICH BRAUCHE EINE WEBSEITE"
             ALS ANFRAGE REICHT AUCH VÖLLIG AUS
-      .col-md-6.col-sm-12
+      .col-md-6.col-sm-12.slide-in-left
         .service-box
           %a.link{:href => "webdesign"}
             .icon
@@ -66,7 +66,7 @@ layout: default
                 Webdesign
               .description
                 Konzeption und Entwicklung  des Designs Ihrer Webseite
-      .col-md-6.col-sm-12
+      .col-md-6.col-sm-12.slide-in-right
         .service-box
           %a.link{:href => "webentwicklung"}
             .icon
@@ -76,7 +76,7 @@ layout: default
                 Webentwicklung
               .description
                 Entwicklung komplexer  Applikationen für das Web
-      .col-md-6.col-sm-12
+      .col-md-6.col-sm-12.slide-in-left
         .service-box
           %a.link{:href => "logos"}
             .icon
@@ -86,7 +86,7 @@ layout: default
                 Logos
               .description
                 Entwicklung des Identitäts- Symbol Ihrer Firma/Verein
-      .col-md-6.col-sm-12
+      .col-md-6.col-sm-12.slide-in-right
         .service-box
           %a.link{:href => "visitenkarten"}
             .icon
@@ -96,7 +96,7 @@ layout: default
                 Visitenkarten
               .description
                 Erstellung von Karten nach  Ihrem Coperate Design
-      .col-md-6.col-sm-12
+      .col-md-6.col-sm-12.slide-in-left
         .service-box
           %a.link{:href => "schulungen"}
             .icon
@@ -106,7 +106,7 @@ layout: default
                 Schulungen
               .description
                 Ich teile mein Wissen und  gebe es an Schüler weiter
-      .col-md-6.col-sm-12
+      .col-md-6.col-sm-12.slide-in-right
         .service-box
           %a.link{:href => "beratung"}
             .icon
@@ -118,7 +118,7 @@ layout: default
                 Domainumzug, Hosting... Ich beantworte Ihre Fragen
 
 // HOME WHYME
-%section#whyme.mb-5
+%section#whyme.mb-5.fade-in
   .container
     .row
       .col.text-center.mb-3
@@ -135,47 +135,29 @@ layout: default
 %section#makeanoffer
   .container
     .row
-      .col.text-center.mb-3
+      .col.text-center.mb-3.fade-in
         %h2.text-uppercase.text-bold LET ME MAKE YOU AN OFFER
         .divider
     .row
-      .col-sm-8.col-xs-12.text-center.mb-5.description
+      .col-sm-8.col-xs-12.text-center.mb-5.description.fade-in
         %p
-          Bitte wählen Sie eine Kategorie aus und beschreiben Sie kurz, was ich für Sie tun kann. Ich werde
-          schnellstmöglich antworten und wenn möglich, einen Kostenvoranschlag machen. Gerne können Sie mich auch
-          zwischen 17:00 Uhr und 22:00 Uhr anrufen.
+          Bitte verwenden Sie das unten stehende Formular um kurz zu beschreiben, wobei ich Ihnen helfen kann. Ich werde
+          nach besten Wissen versuchen ein faires Angebot zu machen. Natürlich können auch Rückfragen entstehen. Sie können
+          mich auch telefonisch zwischen 17:00 Uhr und 22:00 Uhr erreichen.
     .row
-      .col-sm-8.col-xs-12.text-center.mb-5.description
+      .col-sm-8.col-xs-12.text-center.mb-5.description.fade-in
         %p.h2.text-bold Tel.: 01522 1802762
 
 
-// HOME PORTFOLIO
-// %section#portfolio.mb-5
-//   .container
-//     .row
-//       .col
-//         %h3 Portfolio - Hier zeige ich was ich schon gemacht habe
-//     .row
-//       .col-8
-//         %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus quod soluta, tenetur nisi, deleniti omnis corporis quia animi perferendis dolore ipsa! Consectetur sapiente harum pariatur aliquam, quod voluptatum, distinctio eos!
-//       .col-4
-//         %p Mal gucken welches Layout ich hier nehme
-// // HOME BLOGEINTRAEGE
-// %section#blog-entries.mb-5
-//   .container
-//     .row
-//       .col
-//         %h3 Blogeinträge - Hier kommen letzte Blogeinträge hinzu oder so
-//     .row
-//       .col
-//         %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus quod soluta, tenetur nisi, deleniti omnis corporis quia animi
-
-// HOME KONTAKT
-%section#contact.mb-5
+// HOME OFFERFORM
+%section#offerform
   .container
     .row
-      .col
-        %h3 Kontakt - Hier kommt das Kontaktformular hin
-    .row
-      .col
-        %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus quod soluta, tenetur nisi, deleniti omnis corporis quiquod voluptatum, distinctio eos
+      .col-sm-8.col-xs-12.mb-5.form.fade-in.box-center
+        %form{:action => "#", :method => "post"}
+          .form-group
+            %input.form-control{:type => "text", :placeholder => "E-Mail Adresse"}/
+          .form-group
+            %input.form-control{:type => "text", :placeholder => "Worum gehts Ihnen?"}/
+          .form-group
+            %textarea.form-control{:rows => "4"}
