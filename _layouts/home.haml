@@ -5,7 +5,7 @@ layout: default
 // HOME SPLASH AREA
 %header#splasharea
   .background-logo-placeholder
-    %img{:src => "assets/images/background-logo.png", :alt => "Richert Production Logo für den Kopfbereich"}/
+    {% include icons/logo_parts_icon.html %}
   {% haml navigation.haml %}
   .container
     .row.splashscreen-text-wrapper
@@ -27,7 +27,7 @@ layout: default
 %section#introduction
   .container
     .row
-      .col-md-4.col-sm-12.slide-in-left
+      .col-md-4.col-sm-12.slide-in-left.d-none.d-sm-block
         %img{:src => "assets/images/daniel-profil-image.png", :alt => "Bild von Daniel Richert | Gründer Richert Production", :width => "400"}/
       .col-md-8.col-sm-12.description.slide-in-right
         .position-absolute.start-quote
@@ -155,9 +155,20 @@ layout: default
     .row
       .col-sm-8.col-xs-12.mb-5.form.fade-in.box-center
         %form{:action => "#", :method => "post"}
+          %input{:type => "hidden", :name => "_language", :value => "de"}/
           .form-group
-            %input.form-control{:type => "text", :placeholder => "E-Mail Adresse"}/
+            %input.form-control{:type => "text", :name => "_replyto", :placeholder => "Ihre E-Mail Adresse *"}/
+            %p.error-message
           .form-group
-            %input.form-control{:type => "text", :placeholder => "Worum gehts Ihnen?"}/
+            %input.form-control{:type => "text", :name => "_subject", :placeholder => "Um welches Thema handelt es sich? *"}/
+            %p.error-message
           .form-group
-            %textarea.form-control{:rows => "4"}
+            %textarea.form-control{:rows => "4", :name => "message", :placeholder => "Wie kann ich Ihnen helfen? *"}
+            %p.error-message
+          .form-group
+            %input.btn.btn-red{:type => "submit"}/
+        .thank-you-notice.col-12
+          .smiley.mb-5
+            VIELEN DANK
+          .message
+            Vielen Dank für die Anfrage. Ich werde mich so schnell wie möglich bei Ihnen melden!

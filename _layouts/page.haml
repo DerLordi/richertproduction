@@ -2,6 +2,17 @@
 layout: default
 ---
 
-%h1 Hier kommt jetzt der Header rein zum beispiel. Mit Variablen wie image_link  und description etc.
+// PAGE SPLASH AREA
+%header#splasharea
+  {% haml navigation.haml %}
+  .container
+    .row.splashscreen-text-wrapper
+      .col-12
+        %p.h1.text-uppercase.text-right
+          #splashscreen-text.text-center
+        .divider
+        %h2.text-center
+          WEBDESIGN SEITE
+          %strong unverbindliches Angebot erstellen.
 
 {{ content }}

@@ -1,8 +1,9 @@
 #splasharea
-  background-image: url('images/hero-image-5.jpg')
-  background-position: bottom
-  background-repeat: no-repeat
-  background-size: cover
+  // background-image: url('images/hero-image-5.jpg')
+  // background-position: bottom
+  // background-repeat: no-repeat
+  // background-size: cover
+  background-color: $ci-blue
   color: white
   min-height: 706px
   overflow: hidden
@@ -10,13 +11,21 @@
   width: 100vw
 
   .background-logo-placeholder
-    bottom: -45px
-    opacity: .5
+    bottom: 10px
     position: absolute
     right: 100px
-    transition: opacity 200ms
+    width: 600px
+    #first
+      fill: $ci-red
+      transition: fill 500ms
+    #second
+      fill: $ci-green
+      transition: fill 500ms
     &:hover
-      opacity: 1
+      #first
+        fill: $ci-green
+      #second
+        fill: $ci-red
 
   #splashscreen-text
     min-height: 116px

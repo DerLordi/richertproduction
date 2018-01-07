@@ -3,10 +3,34 @@
     .row
       .col-12.text-center.icon
         {% include icons/logo_parts_icon.html %}
-    .row
+    .row.mt-5.mb-5
       .col-12.text-center.socialmedia-icons
         %ul.list-inline
-          %li instagram
-          %li twitter
-          %li facebook
-          %li youtube
+          %li
+            %a{:href => "#"}
+              {% include icons/twitter_icon.html %}
+          %li
+            %a{:href => "#"}
+              {% include icons/facebook_icon.html %}
+          %li
+            %a{:href => "#"}
+              {% include icons/youtube_icon.html %}
+    .row.mt-5.link-list
+      .col-sm-4.col-xs-12.text-center
+        %h3 Liste 1
+        %ul
+          %li Link 1
+          %li Link 2
+          %li Link 3
+      .col-sm-4.col-xs-12.text-center
+        %h3 Letzten Blog Einträge
+        %ul
+          %li Link 1
+          %li Link 2
+          %li Link 3
+      .col-sm-4.col-xs-12.text-center
+        %h3 Projekte
+        %ul
+          %li Link 1
+          %li Link 2
+          %li Link 3

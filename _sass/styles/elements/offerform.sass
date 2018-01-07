@@ -1,6 +1,45 @@
 #offerform
   background-color: $ci-blue
   padding-top: 30px
+  .form
+    background-color: $ci-green
+    padding-top: 15px
+    position: relative
+    form
+      position: relative
+      z-index: 10
+      &.form-sended
+        animation: FORM_SENDED 1s
+        animation-fill-mode: forwards
+  .thank-you-notice
+    padding-top: 100px
+    position: absolute
+    top: 0
+    left: 0
+    display: none
+    color: white
+    text-align: center
+    .smiley
+      font-size: 3em
+      font-weight: bold
+    .message
+      font-size: 1.2em
   input,textarea
     border-radius: 0
     padding: 20px 10px
+  input[type="submit"]
+    width: 100%
+  input.has_error, textarea.has_error
+    border: 2px solid $ci-red
+  .error-message
+    display: none
+    color: darken($ci-red, 20)
+    padding-left: 10px
+
+@keyframes FORM_SENDED
+  0%
+    opacity: 1
+    transform: translateX(0px)
+  100%
+    opacity: 0
+    transform: translateX(1000px)
