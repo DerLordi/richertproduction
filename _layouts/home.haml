@@ -18,10 +18,10 @@ layout: default
           wichtig, wenn man versucht Reichweite zu gewinnen. Ich helfe Ihnen diese zu Erreichen. Lassen Sie sich von mir
           ein
           %strong unverbindliches Angebot erstellen.
-    .row
+    .row.mt-5
       .col-lg-8.col-md-12
         .text-center
-          %a.btn.btn-green.cta-btn{:href => "#"} Angebot erstellen lassen
+          %a.button.button-green.button-rounded{:href => "#"} Angebot erstellen lassen
 
 // HOME INTRODUCTION
 %section#introduction
@@ -35,12 +35,12 @@ layout: default
         .position-absolute.end-quote
           "
         %h2.mb-5 Hi, mein Name ist Daniel Richert,
-        %p
+        %p.mb-2
           ich bin professioneller Webentwickler und Webdesigner. Ausserdem finde ich Logos und das generelle Auftreten
           eines Unternehmens oder Vereins On- sowie Offline sehr interessant. Ich denke das ich für Sie genau der
           richtige bin, wenn Sie sich in diesem Bereich weiterentwickeln wollen. Kontaktieren Sie mich einfach.
           %br/
-          %a.btn.btn-ghost-white.mt-2{:href => "#"} Mehr über mich
+        %a.button.button-white.button-ghost.button-small.button-rounded{:href => "#"} Mehr über mich
 
 // HOME SERVICES
 %section#services
@@ -125,11 +125,29 @@ layout: default
         %h2.text-uppercase.text-bold WHY ME?
         .divider
     .row
-      .col-sm-8.col-xs-12.text-center.mb-5.description
-        %p
+      .col-sm-8.col-xs-12.text-center.mb-5.description.mx-auto
+        %p.text-stylelist
           Ich entwickle Webseiten schon seid Jahren mit Leidenschaft. Ich arbeite sehr eng mit meinen Kunden zusammen
           um ein zufriedenstellendes Ergebnis zu liefern. Und das alles zu faieren Preisen. Es findet sich immer eine
           Lösung, auch für Kunden mit begrenztem Budget.
+    .row
+      %ul.list-unstyled
+        %li.mb-5
+          %a.button.button-default{href: "#"} Nächste Seite
+        %li.mb-5
+          %a.button.button-green{href: "#"} Nächste Seite
+        %li.mb-5
+          %a.button.button-red{href: "#"} Nächste Seite
+        %li.mb-5
+          %a.button.button-green.button-ghost{href: "#"} Nächste Seite
+        %li.mb-5
+          %a.button.button-red.button-ghost.button-rounded{href: "#"} Nächste Seite
+        %li.mb-5
+          %a.button.button-green.button-rounded{href: "#"} Nächste Seite
+        %li.mb-5
+          %a.button.button-red.button-rounded{href: "#"} Nächste Seite
+        %li.mb-5
+          %a.button.button-green.button-rounded.button-small{href: "#"} Nächste Seite
 
 // HOME MAKEANOFFER
 %section#makeanoffer
@@ -139,13 +157,13 @@ layout: default
         %h2.text-uppercase.text-bold LET ME MAKE YOU AN OFFER
         .divider
     .row
-      .col-sm-8.col-xs-12.text-center.mb-5.description.fade-in
-        %p
+      .col-sm-8.col-xs-12.text-center.mb-5.fade-in.mx-auto
+        %p.text-stylelist
           Bitte verwenden Sie das unten stehende Formular um kurz zu beschreiben, wobei ich Ihnen helfen kann. Ich werde
           nach besten Wissen versuchen ein faires Angebot zu machen. Natürlich können auch Rückfragen entstehen. Sie können
           mich auch telefonisch zwischen 17:00 Uhr und 22:00 Uhr erreichen.
     .row
-      .col-sm-8.col-xs-12.text-center.mb-5.description.fade-in
+      .col-sm-8.col-xs-12.text-center.mb-5.fade-in.mx-auto
         %p.h2.text-bold Tel.: 01522 1802762
 
 
@@ -153,7 +171,7 @@ layout: default
 %section#offerform
   .container
     .row
-      .col-sm-8.col-xs-12.mb-5.form.fade-in.box-center
+      .col-sm-8.col-xs-12.mb-5.form.fade-in.mx-auto
         %form{:action => "#", :method => "post"}
           %input{:type => "hidden", :name => "_language", :value => "de"}/
           .form-group
@@ -166,7 +184,7 @@ layout: default
             %textarea.form-control{:rows => "4", :name => "message", :placeholder => "Wie kann ich Ihnen helfen? *"}
             %p.error-message
           .form-group
-            %input.btn.btn-red{:type => "submit"}/
+            %input.button.button-red{:type => "submit"}/
         .thank-you-notice.col-12
           .smiley.mb-5
             VIELEN DANK

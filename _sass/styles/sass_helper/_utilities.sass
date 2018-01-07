@@ -1,53 +1,53 @@
-.box-center
-  margin: 0 auto
+@mixin button-theme($color: white, $color-text-hover: white, $background-color: $medium-gray)
+  color: $color
+  border-color: $background-color
+  background-color: $background-color
+  transition: all 300ms
 
-.btn-green
-  background-color: $ci-green
-  color: white
-  border-radius: 40px
+  &:hover
+    color: $color-text-hover
+    background-color: darken($background-color, 15)
+    border-color: $background-color
+    text-decoration: none
+
+  &.button-ghost
+    background-color: transparent
+    border: 2px solid $background-color
+    color: $background-color
+
+    &:hover
+      background-color: $background-color
+      color: $color-text-hover
+
+%button
   padding: 20px 40px
   font-size: 1.2em
+  text-align: center
   cursor: pointer
-  &:hover
-    color: white
-    background-color: darken($ci-green, 10)
-    transition: background-color 200ms
 
-.btn-ghost-green
-  border: 2px solid $ci-green
-  color: #333
-  border-radius: 40px
-  padding: 15px 30px
-  font-size: 1.2em
-  cursor: pointer
-  &:hover
-    color: white
-    background-color: darken($ci-green, 5)
-    transition: background-color 200ms
+  &.button-rounded
+    border-radius: 40px
 
-.btn-ghost-white
-  border: 2px solid white
-  color: white
-  border-radius: 40px
-  padding: 5px 20px
-  font-size: 1em
-  cursor: pointer
-  &:hover
-    color: #333
-    background-color: darken(white, 5)
-    transition: background-color 200ms
+  &.button-small
+    padding: 8px 20px
+    font-size: 1em
 
-.btn-red
-  background-color: $ci-red
-  color: white
-  border-radius: 40px
-  padding: 20px 40px
-  font-size: 1.2em
-  cursor: pointer
-  &:hover
-    color: white
-    background-color: lighten($ci-red, 10)
-    transition: background-color 200ms
+.button
+  @extend %button
+
+.button-default
+  @include button-theme()
+
+.button-green
+  @include button-theme(white, white, $ci-green)
+
+.button-red
+  @extend %button
+  @include button-theme(white, white, $ci-red)
+
+.button-white
+  @extend %button
+  @include button-theme(white, #333, white)
 
 .divider
   background-color: $ci-green
@@ -64,12 +64,13 @@
 .bg-red
   background-color: $ci-red !important
 
-.color-white
-  color: white
-
 .position-absolute
   position: absolute
 
 .list-inline
   li
     display: inline
+
+.text-stylelist
+  letter-spacing: 1px
+  line-height: 30px
