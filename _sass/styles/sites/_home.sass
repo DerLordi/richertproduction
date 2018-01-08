@@ -1,4 +1,32 @@
 #home
+  #splasharea
+    .background-logo-placeholder
+      bottom: 10px
+      position: absolute
+      right: 100px
+      width: 600px
+      #first
+        fill: $ci-red
+        transition: fill 500ms
+      #second
+        fill: $ci-green
+        transition: fill 500ms
+      &:hover
+        #first
+          fill: $ci-green
+        #second
+          fill: $ci-red
+
+      .typewriter_wrapper
+        font-size: 3em
+        font-weight: bold
+
+        .typewriter-text
+          min-height: 116px
+          span
+            font-size: 2.2em
+            font-weight: bold
+
   #introduction
     color: white
     padding-top: 20px

@@ -1,5 +1,5 @@
 var pause_time = 1500;
-var splash_screen_text = document.getElementById('splashscreen-text');
+var splash_screen_text = document.querySelector('.splashscreen-text');
 
 var typewriter = new Typewriter(splash_screen_text, {
     loop: true
