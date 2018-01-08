@@ -3,190 +3,127 @@ layout: default
 ---
 
 // HOME SPLASH AREA
-%header#splasharea
-  .background-logo-placeholder
-    {% include icons/logo_parts_icon.html %}
-  {% haml navigation.haml %}
-  .container
-    .row.splashscreen-text-wrapper
-      .col-lg-8.col-md-12
-        %p.h1.text-uppercase.text-right
-          #splashscreen-text.text-center
-        .divider
-        %h2.text-center
-          Wiedererkennungswert und Präsenz im Marktumfeld ist für ein Unternehmen, einem Verein oder einer Einzelperson
-          wichtig, wenn man versucht Reichweite zu gewinnen. Ich helfe Ihnen diese zu Erreichen. Lassen Sie sich von mir
-          ein
-          %strong unverbindliches Angebot erstellen.
-    .row.mt-5
-      .col-lg-8.col-md-12
-        .text-center
-          %a.button.button-green.button-rounded{:href => "#"} Angebot erstellen lassen
+#home
+  %header#splasharea
+    .background-logo-placeholder
+      {% include icons/logo_parts_icon.html %}
+    {% haml navigation.haml %}
+    .container
+      .row.splashscreen-text-wrapper
+        .col-lg-8.col-md-12
+          %p.h1.text-uppercase.text-right
+            #splashscreen-text.text-center
+          .divider
+          %h2.text-center
+            Wiedererkennungswert und Präsenz im Marktumfeld ist für ein Unternehmen, einem Verein oder einer Einzelperson
+            wichtig, wenn man versucht Reichweite zu gewinnen. Ich helfe Ihnen diese zu Erreichen. Lassen Sie sich von mir
+            ein
+            %strong unverbindliches Angebot erstellen.
+      .row.mt-5
+        .col-lg-8.col-md-12
+          .text-center
+            %a.button-green.button-rounded{:href => "#"} Angebot erstellen lassen
 
-// HOME INTRODUCTION
-%section#introduction
-  .container
-    .row
-      .col-md-4.col-sm-12.slide-in-left.d-none.d-sm-block
-        %img{:src => "assets/images/daniel-profil-image.png", :alt => "Bild von Daniel Richert | Gründer Richert Production", :width => "400"}/
-      .col-md-8.col-sm-12.description.slide-in-right
-        .position-absolute.start-quote
-          "
-        .position-absolute.end-quote
-          "
-        %h2.mb-5 Hi, mein Name ist Daniel Richert,
-        %p.mb-2
-          ich bin professioneller Webentwickler und Webdesigner. Ausserdem finde ich Logos und das generelle Auftreten
-          eines Unternehmens oder Vereins On- sowie Offline sehr interessant. Ich denke das ich für Sie genau der
-          richtige bin, wenn Sie sich in diesem Bereich weiterentwickeln wollen. Kontaktieren Sie mich einfach.
-          %br/
-        %a.button.button-white.button-ghost.button-small.button-rounded{:href => "#"} Mehr über mich
+  // HOME INTRODUCTION
+  %section#introduction.bg-green
+    .container
+      .row
+        .col-md-4.col-sm-12.slide-in-left.d-none.d-sm-block
+          %img{:src => "assets/images/daniel-profil-image.png", :alt => "Bild von Daniel Richert | Gründer Richert Production", :width => "400"}/
+        .col-md-8.col-sm-12.quote-box.slide-in-right
+          %h2.mb-5 Hi, mein Name ist Daniel Richert,
+          %p.mb-2
+            ich bin professioneller Webentwickler und Webdesigner. Ausserdem finde ich Logos und das generelle Auftreten
+            eines Unternehmens oder Vereins On- sowie Offline sehr interessant. Ich denke das ich für Sie genau der
+            richtige bin, wenn Sie sich in diesem Bereich weiterentwickeln wollen. Kontaktieren Sie mich einfach.
+            %br/
+          %a.button-white.button-ghost.button-small.button-rounded{:href => "#"} Mehr über mich
 
-// HOME SERVICES
-%section#services
-  .container
-    .row
-      .col.text-center.mb-3
-        %h2.text-uppercase.text-bold My Services
-        .divider
-    .row
-      .col-sm-12
-        .service-box.bg-green.color-white.text-bold
-          .col-xs-12.text-uppercase.text-center
-            ALLE DIENSTLEISTUNGEN LASSEN SICH KOMBINIEREN -
-            %u "ICH BRAUCHE EINE WEBSEITE"
-            ALS ANFRAGE REICHT AUCH VÖLLIG AUS
-      .col-md-6.col-sm-12.slide-in-left
-        .service-box
-          %a.link{:href => "webdesign"}
-            .icon
-              {% include icons/webdesign_icon.html %}
-            .text
-              .header.text-uppercase
-                Webdesign
-              .description
-                Konzeption und Entwicklung  des Designs Ihrer Webseite
-      .col-md-6.col-sm-12.slide-in-right
-        .service-box
-          %a.link{:href => "webentwicklung"}
-            .icon
-              {% include icons/webentwicklung_icon.html %}
-            .text
-              .header.text-uppercase
-                Webentwicklung
-              .description
-                Entwicklung komplexer  Applikationen für das Web
-      .col-md-6.col-sm-12.slide-in-left
-        .service-box
-          %a.link{:href => "logos"}
-            .icon
-              {% include icons/logo_icon.html %}
-            .text
-              .header.text-uppercase
-                Logos
-              .description
-                Entwicklung des Identitäts- Symbol Ihrer Firma/Verein
-      .col-md-6.col-sm-12.slide-in-right
-        .service-box
-          %a.link{:href => "visitenkarten"}
-            .icon
-              {% include icons/visitenkarte_icon.html %}
-            .text
-              .header.text-uppercase
-                Visitenkarten
-              .description
-                Erstellung von Karten nach  Ihrem Coperate Design
-      .col-md-6.col-sm-12.slide-in-left
-        .service-box
-          %a.link{:href => "schulungen"}
-            .icon
-              {% include icons/schulung_icon.html %}
-            .text
-              .header.text-uppercase
-                Schulungen
-              .description
-                Ich teile mein Wissen und  gebe es an Schüler weiter
-      .col-md-6.col-sm-12.slide-in-right
-        .service-box
-          %a.link{:href => "beratung"}
-            .icon
-              {% include icons/beratung_icon.html %}
-            .text
-              .header.text-uppercase
-                Beratungen
-              .description
-                Domainumzug, Hosting... Ich beantworte Ihre Fragen
+  // HOME SERVICES
+  %section#services.bg-light-gray
+    .container
+      .row
+        .col.text-center.mb-3
+          %h2.text-uppercase.text-bold My Services
+          .divider
+      .row
+        .col-sm-12.mb-5
+          .text-bg.text-bg-green.text-bold
+            .col-xs-12.text-center
+              ALLE DIENSTLEISTUNGEN LASSEN SICH KOMBINIEREN -
+              %u "ICH BRAUCHE EINE WEBSEITE"
+              ALS ANFRAGE REICHT AUCH VÖLLIG AUS
+        .col-md-6.col-sm-12.slide-in-left
+          .service-box
+            %a.link{:href => "webdesign"}
+              .icon
+                {% include icons/webdesign_icon.html %}
+              .text
+                .header.text-uppercase
+                  Webdesign
+                .description
+                  Konzeption und Entwicklung  des Designs Ihrer Webseite
+        .col-md-6.col-sm-12.slide-in-right
+          .service-box
+            %a.link{:href => "webentwicklung"}
+              .icon
+                {% include icons/webentwicklung_icon.html %}
+              .text
+                .header.text-uppercase
+                  Webentwicklung
+                .description
+                  Entwicklung komplexer  Applikationen für das Web
+        .col-md-6.col-sm-12.slide-in-left
+          .service-box
+            %a.link{:href => "logos"}
+              .icon
+                {% include icons/logo_icon.html %}
+              .text
+                .header.text-uppercase
+                  Logos
+                .description
+                  Entwicklung des Identitäts- Symbol Ihrer Firma/Verein
+        .col-md-6.col-sm-12.slide-in-right
+          .service-box
+            %a.link{:href => "visitenkarten"}
+              .icon
+                {% include icons/visitenkarte_icon.html %}
+              .text
+                .header.text-uppercase
+                  Visitenkarten
+                .description
+                  Erstellung von Karten nach  Ihrem Coperate Design
+        .col-md-6.col-sm-12.slide-in-left
+          .service-box
+            %a.link{:href => "schulungen"}
+              .icon
+                {% include icons/schulung_icon.html %}
+              .text
+                .header.text-uppercase
+                  Schulungen
+                .description
+                  Ich teile mein Wissen und  gebe es an Schüler weiter
+        .col-md-6.col-sm-12.slide-in-right
+          .service-box
+            %a.link{:href => "beratung"}
+              .icon
+                {% include icons/beratung_icon.html %}
+              .text
+                .header.text-uppercase
+                  Beratungen
+                .description
+                  Domainumzug, Hosting... Ich beantworte Ihre Fragen
 
-// HOME WHYME
-%section#whyme.mb-5.fade-in
-  .container
-    .row
-      .col.text-center.mb-3
-        %h2.text-uppercase.text-bold WHY ME?
-        .divider
-    .row
-      .col-sm-8.col-xs-12.text-center.mb-5.description.mx-auto
-        %p.text-stylelist
-          Ich entwickle Webseiten schon seid Jahren mit Leidenschaft. Ich arbeite sehr eng mit meinen Kunden zusammen
-          um ein zufriedenstellendes Ergebnis zu liefern. Und das alles zu faieren Preisen. Es findet sich immer eine
-          Lösung, auch für Kunden mit begrenztem Budget.
-    .row
-      %ul.list-unstyled
-        %li.mb-5
-          %a.button.button-default{href: "#"} Nächste Seite
-        %li.mb-5
-          %a.button.button-green{href: "#"} Nächste Seite
-        %li.mb-5
-          %a.button.button-red{href: "#"} Nächste Seite
-        %li.mb-5
-          %a.button.button-green.button-ghost{href: "#"} Nächste Seite
-        %li.mb-5
-          %a.button.button-red.button-ghost.button-rounded{href: "#"} Nächste Seite
-        %li.mb-5
-          %a.button.button-green.button-rounded{href: "#"} Nächste Seite
-        %li.mb-5
-          %a.button.button-red.button-rounded{href: "#"} Nächste Seite
-        %li.mb-5
-          %a.button.button-green.button-rounded.button-small{href: "#"} Nächste Seite
-
-// HOME MAKEANOFFER
-%section#makeanoffer
-  .container
-    .row
-      .col.text-center.mb-3.fade-in
-        %h2.text-uppercase.text-bold LET ME MAKE YOU AN OFFER
-        .divider
-    .row
-      .col-sm-8.col-xs-12.text-center.mb-5.fade-in.mx-auto
-        %p.text-stylelist
-          Bitte verwenden Sie das unten stehende Formular um kurz zu beschreiben, wobei ich Ihnen helfen kann. Ich werde
-          nach besten Wissen versuchen ein faires Angebot zu machen. Natürlich können auch Rückfragen entstehen. Sie können
-          mich auch telefonisch zwischen 17:00 Uhr und 22:00 Uhr erreichen.
-    .row
-      .col-sm-8.col-xs-12.text-center.mb-5.fade-in.mx-auto
-        %p.h2.text-bold Tel.: 01522 1802762
-
-
-// HOME OFFERFORM
-%section#offerform
-  .container
-    .row
-      .col-sm-8.col-xs-12.mb-5.form.fade-in.mx-auto
-        %form{:action => "#", :method => "post"}
-          %input{:type => "hidden", :name => "_language", :value => "de"}/
-          .form-group
-            %input.form-control{:type => "text", :name => "_replyto", :placeholder => "Ihre E-Mail Adresse *"}/
-            %p.error-message
-          .form-group
-            %input.form-control{:type => "text", :name => "_subject", :placeholder => "Um welches Thema handelt es sich? *"}/
-            %p.error-message
-          .form-group
-            %textarea.form-control{:rows => "4", :name => "message", :placeholder => "Wie kann ich Ihnen helfen? *"}
-            %p.error-message
-          .form-group
-            %input.button.button-red{:type => "submit"}/
-        .thank-you-notice.col-12
-          .smiley.mb-5
-            VIELEN DANK
-          .message
-            Vielen Dank für die Anfrage. Ich werde mich so schnell wie möglich bei Ihnen melden!
+  // HOME WHYME
+  %section#whyme.mb-5.fade-in
+    .container
+      .row
+        .col.text-center.mb-3
+          %h2.text-uppercase.text-bold WHY ME?
+          .divider
+      .row
+        .col-sm-8.col-xs-12.text-center.mb-5.description.mx-auto
+          %p.text-stylelist
+            Ich entwickle Webseiten schon seid Jahren mit Leidenschaft. Ich arbeite sehr eng mit meinen Kunden zusammen
+            um ein zufriedenstellendes Ergebnis zu liefern. Und das alles zu faieren Preisen. Es findet sich immer eine
+            Lösung, auch für Kunden mit begrenztem Budget.

@@ -1,0 +1,37 @@
+.service-box
+  background-color: white
+  margin-bottom: 30px
+  overflow: hidden
+  transition: all 200ms
+
+  &:hover
+    background-color: $ci-green
+    color: white
+    .icon svg
+      fill: white
+    .text .description
+      color: white
+
+  .link
+    color: inherit
+    display: block
+    overflow: hidden
+    padding: 40px
+
+  .icon
+    float: left
+    width: 82px
+    svg
+      fill: $ci-green
+
+  .text
+    float: right
+    width: 65%
+
+    .header
+      font-weight: bold
+      margin-bottom: 10px
+
+    .description
+      color: $medium-gray
+      line-height: 27px

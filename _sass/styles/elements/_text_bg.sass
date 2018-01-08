@@ -1,0 +1,24 @@
+@mixin text-bg-theme($background-color: $medium-gray, $color: white)
+  color: $color
+  border-color: $background-color
+  background-color: $background-color
+
+  &.text-bg-ghost
+    background-color: transparent
+    border: 3px solid $background-color
+    color: $background-color
+
+.text-bg
+  padding: 40px
+
+.text-bg-default
+  @include text-bg-theme()
+
+.text-bg-green
+  @include text-bg-theme($ci-green)
+
+.text-bg-red
+  @include text-bg-theme($ci-red)
+
+.text-bg-blue
+  @include text-bg-theme($ci-blue)

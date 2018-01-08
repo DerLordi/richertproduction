@@ -1,3 +1,45 @@
+// HOME MAKEANOFFER
+%section#makeanoffer
+  .container
+    .row
+      .col.text-center.mb-3.fade-in
+        %h2.text-uppercase.text-bold LET ME MAKE YOU AN OFFER
+        .divider
+    .row
+      .col-sm-8.col-xs-12.text-center.mb-5.fade-in.mx-auto
+        %p.text-stylelist
+          Bitte verwenden Sie das unten stehende Formular um kurz zu beschreiben, wobei ich Ihnen helfen kann. Ich werde
+          nach besten Wissen versuchen ein faires Angebot zu machen. Natürlich können auch Rückfragen entstehen. Sie können
+          mich auch telefonisch zwischen 17:00 Uhr und 22:00 Uhr erreichen.
+    .row
+      .col-sm-8.col-xs-12.text-center.mb-5.fade-in.mx-auto
+        %p.h2.text-bold Tel.: 01522 1802762
+
+
+// HOME OFFERFORM
+%section#offerform
+  .container
+    .row
+      .col-sm-8.col-xs-12.mb-5.form.fade-in.mx-auto
+        %form{:action => "#", :method => "post"}
+          %input{:type => "hidden", :name => "_language", :value => "de"}/
+          .form-group
+            %input.form-control{:type => "text", :name => "_replyto", :placeholder => "Ihre E-Mail Adresse *"}/
+            %p.error-message
+          .form-group
+            %input.form-control{:type => "text", :name => "_subject", :placeholder => "Um welches Thema handelt es sich? *"}/
+            %p.error-message
+          .form-group
+            %textarea.form-control{:rows => "4", :name => "message", :placeholder => "Wie kann ich Ihnen helfen? *"}
+            %p.error-message
+          .form-group
+            %input.button-red{:type => "submit"}/
+        .thank-you-notice.col-12
+          .smiley.mb-5
+            VIELEN DANK
+          .message
+            Vielen Dank für die Anfrage. Ich werde mich so schnell wie möglich bei Ihnen melden!
+
 %footer
   .container
     .row

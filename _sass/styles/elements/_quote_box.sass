@@ -1,0 +1,22 @@
+%quotes
+  color: #ddd
+  content: '"'
+  font-size: 200px
+  position: absolute
+
+.quote-box
+  line-height: 30px
+  padding: 40px 80px
+  position: relative
+  h2
+    font-weight: bold
+
+  &:before
+    @extend %quotes
+    left: -8px
+    top: 74px
+
+  &:after
+    @extend %quotes
+    bottom: 20px
+    right: 65px

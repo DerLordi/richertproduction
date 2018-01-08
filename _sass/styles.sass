@@ -1,21 +1,28 @@
 @charset "utf-8"
 
-// sass_helper partials.
+// including utils
+@import "styles/utils/syntax-highlighting"
+
+// including sass_helper
 @import "styles/sass_helper/variables"
-@import "styles/sass_helper/syntax-highlighting"
 @import "styles/sass_helper/fonts"
 @import "styles/sass_helper/mixins"
 @import "styles/sass_helper/utilities"
 
-//site specific styles
-@import "styles/elements/navbar"
+// including element styles
+@import "styles/elements/buttons"
+@import "styles/elements/quote_box"
+@import "styles/elements/service_link_box"
+@import "styles/elements/text_bg"
 @import "styles/elements/splasharea"
-@import "styles/elements/services"
-@import "styles/elements/introduction"
-@import "styles/elements/contact"
-@import "styles/elements/makeanoffer"
-@import "styles/elements/offerform"
-@import "styles/elements/footer"
+
+// including layout styles
+@import "styles/layout/navbar"
+@import "styles/layout/offerform"
+@import "styles/layout/footer"
+
+// including site specific styles
+@import "styles/sites/home"
 
 /**
  * Reset some basic elements

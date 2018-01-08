@@ -1,54 +1,3 @@
-@mixin button-theme($color: white, $color-text-hover: white, $background-color: $medium-gray)
-  color: $color
-  border-color: $background-color
-  background-color: $background-color
-  transition: all 300ms
-
-  &:hover
-    color: $color-text-hover
-    background-color: darken($background-color, 15)
-    border-color: $background-color
-    text-decoration: none
-
-  &.button-ghost
-    background-color: transparent
-    border: 2px solid $background-color
-    color: $background-color
-
-    &:hover
-      background-color: $background-color
-      color: $color-text-hover
-
-%button
-  padding: 20px 40px
-  font-size: 1.2em
-  text-align: center
-  cursor: pointer
-
-  &.button-rounded
-    border-radius: 40px
-
-  &.button-small
-    padding: 8px 20px
-    font-size: 1em
-
-.button
-  @extend %button
-
-.button-default
-  @include button-theme()
-
-.button-green
-  @include button-theme(white, white, $ci-green)
-
-.button-red
-  @extend %button
-  @include button-theme(white, white, $ci-red)
-
-.button-white
-  @extend %button
-  @include button-theme(white, #333, white)
-
 .divider
   background-color: $ci-green
   height: 4px
@@ -60,9 +9,12 @@
 
 .bg-green
   background-color: $ci-green !important
-
 .bg-red
   background-color: $ci-red !important
+.bg-blue
+  background-color: $ci-blue !important
+.bg-light-gray
+  background-color: $light-gray !important
 
 .position-absolute
   position: absolute
