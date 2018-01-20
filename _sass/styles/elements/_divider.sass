@@ -1,0 +1,33 @@
+@mixin divider_theme($background-color: $light-gray)
+  background-color: $background-color
+  height: 4px
+  margin: 40px auto
+  width: 100px
+
+  &.divider-small
+    width: 60px
+
+  &.divider-big
+    width: 140px
+
+  &.divider-thick
+    height: 6px
+
+  &.divider-thin
+    height: 2px
+
+.divider
+  @include divider_theme()
+
+.divider-green
+  @include divider_theme($ci-green)
+
+.divider-red
+  @include divider_theme($ci-red)
+
+.divider-blue
+  @include divider_theme($ci-blue)
+
+.divider-white
+  @include divider_theme(white)
+

@@ -7,15 +7,34 @@ nav.navbar
         color: #ccc
       &.active a.nav-link
         color: white
-  img.logo
+  svg
     transition: transform 200ms
+
+    @media (max-width: 576px)
+      #name
+        display: none
+    #name
+      fill: white
+      transform: all 200ms
+    #r
+      fill: $ci-red
+    #p
+      fill: $ci-green
     &:hover
+      #name
+        fill: #333
       transform: scale(1.05)
 
 nav.navbar.reduced
   padding: 5px 40px
   background-color: white
   box-shadow: 0 0 8px -2px #333
+
+  svg
+    transition: transform 200ms
+    #name
+      fill: $ci-blue
+      transform: all 200ms
 
   li.nav-item
     a.nav-link

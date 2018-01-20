@@ -1,7 +1,7 @@
 .container-fluid
   %nav.navbar.navbar-expand-lg.fixed-top
-    %a.navbar-brand{:href => "#"}
-      %img.logo{:src => "assets/images/logo.png", :alt => "Logo von Richertproduction.de", :width => "350px"}/
+    %a.navbar-brand{:href => "/"}
+      {% include icons/rp_logo.html %}
     %button.navbar-toggler{"aria-controls" => "navigationsbar", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navigationsbar", "data-toggle" => "collapse", :type => "button"}
       %span.navbar-toggler-icon
     #navigationsbar.collapse.navbar-collapse.justify-content-end

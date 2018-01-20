@@ -4,16 +4,16 @@ layout: default
 
 // HOME SPLASH AREA
 #home
-  %header#splasharea
+  %header.splasharea
     .background-logo-placeholder
       {% include icons/logo_parts_icon.html %}
     {% haml navigation.haml %}
     .container
       .row.splashscreen-text-wrapper
         .col-lg-8.col-md-12
-          %p.typewriter_wrapper.text-uppercase.text-right
+          .typewriter-wrapper-box.text-uppercase.text-right
             .typewriter-text.text-center
-          .divider
+          .divider-green
           %h2.text-center
             Wiedererkennungswert und Präsenz im Marktumfeld ist für ein Unternehmen, einem Verein oder einer Einzelperson
             wichtig, wenn man versucht Reichweite zu gewinnen. Ich helfe Ihnen diese zu Erreichen. Lassen Sie sich von mir
@@ -32,12 +32,22 @@ layout: default
           %img{:src => "assets/images/daniel-profil-image.png", :alt => "Bild von Daniel Richert | Gründer Richert Production", :width => "400"}/
         .col-md-8.col-sm-12.quote-box.slide-in-right
           %h2.mb-5 Hi, mein Name ist Daniel Richert,
-          %p.mb-2
+          %p.mb-3
             ich bin professioneller Webentwickler und Webdesigner. Ausserdem finde ich Logos und das generelle Auftreten
             eines Unternehmens oder Vereins On- sowie Offline sehr interessant. Ich denke das ich für Sie genau der
-            richtige bin, wenn Sie sich in diesem Bereich weiterentwickeln wollen. Kontaktieren Sie mich einfach.
+            richtige bin, wenn es darum geht IHRE IDEE umzusetzen. Kontaktieren Sie mich einfach.
             %br/
           %a.button-white.button-ghost.button-small.button-rounded{:href => "#"} Mehr über mich
+
+  %section#page-description
+    .container
+      .row
+        .col-12.mx-auto.mt-3.mb-3.text-center
+          // TODO: Icon kommt auch aus unterseite
+          %h1
+            Ich bin Ihr Ansprechpartner für Webdesign, Webentwicklung, Logo- sowie Visitenkartendesign. Ich designe
+            und entwickle gerne IHRE IDEE. Ob es sich um ein Webprojekt oder um die Aussenwirkung Ihrer Marke handelt,
+            umgesetzt wird es so, dass Sie später STOLZ DARAUF sein werden.
 
   // HOME SERVICES
   %section#services.bg-light-gray
@@ -45,14 +55,12 @@ layout: default
       .row
         .col.text-center.mb-3
           %h2.text-uppercase.text-bold My Services
-          .divider
+          .divider-green
       .row
         .col-sm-12.mb-5
           .text-bg.text-bg-green.text-bold
             .col-xs-12.text-center
-              ALLE DIENSTLEISTUNGEN LASSEN SICH KOMBINIEREN -
-              %u "ICH BRAUCHE EINE WEBSEITE"
-              ALS ANFRAGE REICHT AUCH VÖLLIG AUS
+              ICH HABE MEINE DIENSTLEISTUNGEN IN 6 KATEGEGORIEN GETEILT. NATÜRLICH LASSEN SICH ALLE KOMBINIEREN. IHRE IDEE STEHT IM VORDERGRUND
         .col-md-6.col-sm-12.slide-in-left
           .service-box
             %a.link{:href => "webdesign"}
@@ -120,7 +128,7 @@ layout: default
       .row
         .col.text-center.mb-3
           %h2.text-uppercase.text-bold WHY ME?
-          .divider
+          .divider-green
       .row
         .col-sm-8.col-xs-12.text-center.mb-5.description.mx-auto
           %p.text-stylelist

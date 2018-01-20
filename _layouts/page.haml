@@ -3,16 +3,30 @@ layout: default
 ---
 
 // PAGE SPLASH AREA
-%header#splasharea
-  {% haml navigation.haml %}
-  .container
-    .row.splashscreen-text-wrapper
-      .col-12
-        %p.h1.text-uppercase.text-right
-          #splashscreen-text.text-center
-        .divider
-        %h2.text-center
-          WEBDESIGN SEITE
-          %strong unverbindliches Angebot erstellen.
+%div.page{:id => "{{ page.page_name }}" }
+  %header.splasharea{ :style => "background-image: url('assets/images/content_pages/{{ page.page_name }}/hero_image.jpg')"}
+    {% haml navigation.haml %}
+    .container
+      .row.splashscreen-text-wrapper
+        .col-12.quote-box
+          %h2.text-center
+            {{ page.quote }}
+          .divider.divider-small.divider-thin
+          .author {{ page.quote_author }}
 
-{{ content }}
+      .col-6.mx-auto.header-box
+        .row
+          .col-5.text-center
+            .icon
+              // TODO: Icon kommt auch aus unterseite
+              {% include {{ page.icon_path }} %}
+          .col-7.header-text.text-uppercase
+            {{ page.page_name }}
+
+  %section#page-description
+    .container
+      .row
+        .col-12.mx-auto.mt-3.mb-3.text-center
+          %h1 {{ page.h1_text }}
+
+  {{ content }}
