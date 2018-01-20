@@ -4,47 +4,35 @@ layout: default
 
 // HOME SPLASH AREA
 #home
-  %header.splasharea
-    .background-logo-placeholder
-      {% include icons/logo_parts_icon.html %}
+  %header.splasharea{:style => "background-image: url('assets/images/hero-image-6.jpg')"}
     {% haml navigation.haml %}
     .container
       .row.splashscreen-text-wrapper
-        .col-lg-8.col-md-12
+        .col-md-12
           .typewriter-wrapper-box.text-uppercase.text-right
             .typewriter-text.text-center
           .divider-green
-          %h2.text-center
-            Wiedererkennungswert und Präsenz im Marktumfeld ist für ein Unternehmen, einem Verein oder einer Einzelperson
-            wichtig, wenn man versucht Reichweite zu gewinnen. Ich helfe Ihnen diese zu Erreichen. Lassen Sie sich von mir
-            ein
-            %strong unverbindliches Angebot erstellen.
-      .row.mt-5
-        .col-lg-8.col-md-12
-          .text-center
-            %a.button-green.button-rounded{:href => "#"} Angebot erstellen lassen
-
-  // HOME INTRODUCTION
-  %section#introduction.bg-green
-    .container
-      .row
-        .col-md-4.col-sm-12.slide-in-left.d-none.d-sm-block
-          %img{:src => "assets/images/daniel-profil-image.png", :alt => "Bild von Daniel Richert | Gründer Richert Production", :width => "400"}/
-        .col-md-8.col-sm-12.quote-box.slide-in-right
-          %h2.mb-5 Hi, mein Name ist Daniel Richert,
-          %p.mb-3
-            ich bin professioneller Webentwickler und Webdesigner. Ausserdem finde ich Logos und das generelle Auftreten
-            eines Unternehmens oder Vereins On- sowie Offline sehr interessant. Ich denke das ich für Sie genau der
-            richtige bin, wenn es darum geht IHRE IDEE umzusetzen. Kontaktieren Sie mich einfach.
+          %h2.text-center.intro.mb-5.fade-in
+            Hi, mein Name ist DANIEL RICHERT,
+          %h2.text-center.mb-5.fade-in
+            ich bin professioneller Webentwickler und Webdesigner. Seid vielen Jahren arbeite ich an Webprojekte, Logodesigns
+            und Firmenbranding. Ich denke das ich für Sie genau der richtige bin, wenn es darum geht IHRE IDEE umzusetzen.
             %br/
-          %a.button-white.button-ghost.button-small.button-rounded{:href => "#"} Mehr über mich
+            %br/
+            %strong Lassen Sie mich Ihnen ein unverbindliches Angebot erstellen.
+      .row.mt-5.fade-in
+        .col-md-12
+          .text-center
+            %a.button-red.button-big.button-rounded{:href => "#"} Angebot erstellen lassen
 
   %section#page-description
+    .bg-logo
+      {% include icons/logo_parts_icon.html %}
     .container
       .row
         .col-12.mx-auto.mt-3.mb-3.text-center
           // TODO: Icon kommt auch aus unterseite
-          %h1
+          %h1.fade-in
             Ich bin Ihr Ansprechpartner für Webdesign, Webentwicklung, Logo- sowie Visitenkartendesign. Ich designe
             und entwickle gerne IHRE IDEE. Ob es sich um ein Webprojekt oder um die Aussenwirkung Ihrer Marke handelt,
             umgesetzt wird es so, dass Sie später STOLZ DARAUF sein werden.
