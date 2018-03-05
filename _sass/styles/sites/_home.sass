@@ -2,18 +2,52 @@
   .splasharea
     background-color: $ci-blue
     height: 100vh
+    overflow: hidden
+
+    .bg-logo
+      position: absolute
+      transform: rotate(180deg)
+      right: -340px
+      width: 1490px
+      top: -590px
+      opacity: .3
 
     .splashscreen-text-wrapper
       h2
         font-size: 2em
         line-height: 40px
-        font-weight: bold
+        font-weight: 300
         color: white
+        margin-top: 120px
         letter-spacing: 1px
-        text-shadow: 2px 2px 2px #777
+        text-shadow: 1px 1px 1px #333
 
         &.intro
           font-size: 3em
+
+    .mouse
+      background-color: transparent
+      border-radius: 30px
+      border: 4px solid white
+      bottom: 20px
+      height: 70px
+      left: 50%
+      position: absolute
+      transform: translate(-50%, 0)
+      width: 40px
+
+      .wrapper
+        position: relative
+        .mouse-wheel
+          position: absolute
+          top: 10px
+          left: 50%
+          transform: translate(-50%, 0)
+          width: 7px
+          height: 13px
+          border-radius: 20px
+          background-color: white
+          animation: MOUSE-WHEEL-BOUNCE 1000ms infinite
 
     .typewriter-wrapper-box
       font-size: 3em
@@ -32,3 +66,11 @@
     padding-top: 60px
     padding-bottom: 60px
     margin-bottom: 60px
+
+@keyframes MOUSE-WHEEL-BOUNCE
+  0%
+    top: 10px
+  90%
+    top: 17px
+  100%
+    top: 10px

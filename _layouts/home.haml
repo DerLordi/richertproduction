@@ -4,18 +4,20 @@ layout: default
 
 // HOME SPLASH AREA
 #home
-  %header.splasharea{:style => "background-image: url('assets/images/hero-image-6.jpg')"}
+  %header.splasharea{:style => "background-image: url('assets/images/hero-image-7.png')"}
+    .bg-logo
+      {% include icons/logo_parts_icon.html %}
+    .mouse
+      .wrapper
+        .mouse-wheel
     {% haml navigation.haml %}
     .container
       .row.splashscreen-text-wrapper
         .col-md-12
           .typewriter-wrapper-box.text-uppercase.text-right
             .typewriter-text.text-center
-          .divider-green
-          %h2.text-center.intro.mb-5.fade-in
-            Hi, mein Name ist DANIEL RICHERT,
           %h2.text-center.mb-5.fade-in
-            ich bin professioneller Webentwickler und Webdesigner. Seid vielen Jahren arbeite ich an Webprojekte, Logodesigns
+            Ich bin professioneller Webentwickler und Webdesigner. Seid vielen Jahren arbeite ich an Webprojekte, Logodesigns
             und Firmenbranding. Ich denke das ich für Sie genau der richtige bin, wenn es darum geht IHRE IDEE umzusetzen.
             %br/
             %br/
@@ -123,3 +125,6 @@ layout: default
             Ich entwickle Webseiten schon seid Jahren mit Leidenschaft. Ich arbeite sehr eng mit meinen Kunden zusammen
             um ein zufriedenstellendes Ergebnis zu liefern. Und das alles zu faieren Preisen. Es findet sich immer eine
             Lösung, auch für Kunden mit begrenztem Budget.
+      .row
+        .col.text-center.mb-3
+          %a.button.button-rounded.button-ghost.button-green.button-small{:href => "#"} Mehr über mich
