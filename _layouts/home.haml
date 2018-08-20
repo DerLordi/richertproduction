@@ -4,7 +4,7 @@ layout: default
 
 // HOME SPLASH AREA
 #home
-  %header.splasharea{:style => "background-image: url('assets/images/hero-image-7.png')"}
+  %header.splasharea{:style => "background-image: url('assets/images/hero-image-6.png')"}
     .bg-logo
       {% include icons/logo_parts_icon.html %}
     .mouse
@@ -112,19 +112,24 @@ layout: default
                 .description
                   Domainumzug, Hosting... Ich beantworte Ihre Fragen
 
-  // HOME WHYME
-  %section#whyme.mb-5.fade-in
+  // HOME MYWORK
+  %section#mywork.mb-5.fade-in
     .container
       .row
         .col.text-center.mb-3
-          %h2.text-uppercase.text-bold WHY ME?
+          %h2.text-uppercase.text-bold MY WORK
           .divider-green
       .row
         .col-sm-8.col-xs-12.text-center.mb-5.description.mx-auto
           %p.text-stylelist
-            Ich entwickle Webseiten schon seid Jahren mit Leidenschaft. Ich arbeite sehr eng mit meinen Kunden zusammen
-            um ein zufriedenstellendes Ergebnis zu liefern. Und das alles zu faieren Preisen. Es findet sich immer eine
-            Lösung, auch für Kunden mit begrenztem Budget.
+            %ul
+              %li Piano-Thilemann (Webdesign & Webentwicklung)
+              %li Febg Anhausen (Logo & Webdesign & Webentwicklung)
+              %li OB-Koblenz (Logo)
+              %li www.reisepassnummer (Webentwicklung AMP)
+              %li David Friesen (Webdesign & Webentwicklung)
+
+
       .row
         .col.text-center.mb-3
-          %a.button.button-rounded.button-ghost.button-green.button-small{:href => "#"} Mehr über mich
+          %a.button.button-rounded.button-ghost.button-green.button-small{:href => "#"} Mein Portfolio
